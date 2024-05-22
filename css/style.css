@@ -1,17 +1,83 @@
-.profile-list, .featured-profiles {
+.profile-card {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    margin: 8px;
 }
 
-.profile-item, .featured-profile {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
+.card-header {
+    height: 100px;
+    background-color: #607D8B;
+    width: 100%;
+}
+
+.fas-circle {
+    width: 220px;
+    height: 200px;
+    margin-top: -80px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+    border: 8px solid #fff;
+}
+
+.profile-info {
     text-align: center;
 }
 
-.profile-image img {
-    max-width: 100%;
-    height: auto;
+.profile-img {
+    width: 220px;
+    height: 200px !important;
+    border-radius: 50% !important;
+}
+
+.profile-name .profile-role {
+    margin-bottom: 0px !important;
+    margin-top: 8px;
+}
+
+.view-profile-btn {
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    text-decoration: none !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-profile-btn:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.profile-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .profile-card {
+        width: 48%;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        width: 100%;
+    }
 }

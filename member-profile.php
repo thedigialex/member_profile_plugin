@@ -122,7 +122,7 @@ function mp_profiles_shortcode($atts)
                 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                 echo '<img  class="profile-img" src="' . esc_url($featured_img_url) . '" alt="' . esc_attr(get_the_title()) . '">';
             } else {
-                echo '<img class="profile-img" src="' . get_template_directory_uri() . '/images/default.png">';
+                echo '<img class="profile-img" src="' . plugins_url('images/default.png', __FILE__) . '">';
             }
             echo '</div>';
             echo '<div class="profile-info">';

@@ -1,5 +1,5 @@
 === Member Profiles Plugin ===
-Contributors: Your Name
+Contributors: Alejandro Martinez
 Tags: profiles, custom post type, member profiles
 Requires at least: 4.6
 Tested up to: 5.7
@@ -36,7 +36,6 @@ This plugin adds a custom meta box to the profile post type for the following fi
 
 The plugin includes custom templates for displaying profiles:
 
-- **archive-profile.php:** Template for the profiles index page.
 - **single-profile.php:** Template for individual profile view pages.
 
 These template files are located in the `templates` folder within the plugin directory.
@@ -55,7 +54,7 @@ After creating profiles, visit `http://yourdomain.com/profiles/` to see the prof
 No, the plugin includes template files that are used to display the profiles index and individual profile pages.
 
 = Can I customize the templates? =
-Yes, you can modify the `archive-profile.php` and `single-profile.php` files in the `templates` folder to fit your theme's design.
+Yes, you can modify the `single-profile.php` files in the `templates` folder to fit your theme's design.
 
 == License ==
 

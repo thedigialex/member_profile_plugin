@@ -1,12 +1,12 @@
 <!-- profiles-display.php -->
 <div class="profile-list">
-    <?php 
-	$args = array(
-    'post_type'      => 'profile',
-    'posts_per_page' => 10  // Customize as needed
-);
+    <?php
+    $args = array(
+        'post_type'      => 'profile',
+        'posts_per_page' => 10  // Customize as needed
+    );
 
-$query = new WP_Query($args);
+    $query = new WP_Query($args);
     $query = new WP_Query($args);
     if ($query->have_posts()) {
         while ($query->have_posts()) : $query->the_post();
@@ -17,7 +17,7 @@ $query = new WP_Query($args);
                 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                 echo '<img  class="profile-img" src="' . esc_url($featured_img_url) . '" alt="' . esc_attr(get_the_title()) . '">';
             } else {
-                echo '<img class="profile-img" src="' . plugins_url( 'images/default.png', __FILE__ ) . '">';
+                echo '<img class="profile-img" src="' . plugin_dir_url(__FILE__) . 'images/default.png">';
             }
             echo '</div>';
             echo '<div class="profile-info">';

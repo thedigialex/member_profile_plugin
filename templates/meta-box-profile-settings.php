@@ -10,3 +10,7 @@
     <label for="sub_heading"><?php _e('Sub Heading', 'textdomain'); ?></label>
     <input type="text" name="sub_heading" id="sub_heading" value="<?php echo esc_attr($sub_heading); ?>">
 </p>
+<p>
+    <label for="location"><?php _e('Location', 'textdomain'); ?></label>
+    <input type="text" name="location" id="location" value="<?php echo esc_attr($location); ?>">
+</p>
